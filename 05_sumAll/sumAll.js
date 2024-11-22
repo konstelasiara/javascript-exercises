@@ -1,17 +1,15 @@
-const sumAll = function(...args) {
-  let finalSum = 0;
+const sumAll = function(num1, num2) {
+  let finalSum = 0; // initializing final summary storage
 
-  if (!args.isInteger()) return "ERROR" // check if negative
+  if (num1 < 0 || num2 < 0) return "ERROR"; // check if negative
+  if (!Number.isInteger(num1) || !Number.isInteger(num2)) return "ERROR"; // check if actual integer
 
-  if ((!Number.isInteger(args[0])) || (!Number.isInteger[1])) {
-    return "ERROR"
-  } // check if actual integer
+  // to determine which with higher and lower numbers
+  let higher = Math.max(num1, num2);
+  let lower = Math.min(num1, num2);
 
-  for(let i = 0; i < args; i++){
-    finalSum += args;
-  }
+  
 
-  return finalSum
 };
 
 // Do not edit below this line

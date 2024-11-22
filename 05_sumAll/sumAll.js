@@ -8,8 +8,12 @@ const sumAll = function(num1, num2) {
   let higher = Math.max(num1, num2);
   let lower = Math.min(num1, num2);
 
-  
+  // looping the number from higher to lower, count down
+  for (let i = higher; i >= lower; i--) {
+    finalSum += i
+  }
 
+  return finalSum
 };
 
 // Do not edit below this line
